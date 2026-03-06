@@ -521,7 +521,7 @@ img {
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.plan__stipe {
+.plan__stripe {
     position: absolute;
     left: 0;
     right: 0;
@@ -531,7 +531,17 @@ img {
     border-top-right-radius: 8px;
 }
 
+.plan:nth-child(1) .plan__stripe,
+.plan:nth-child(1) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 1788, 172) 0%, rgb(129, 230, 217) 100%);
+}
 
+.plan:nth-child(3) .plan__stripe,
+.plan:nth-child(3) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
 
 .plan__top {
     display: flex;
@@ -569,6 +579,19 @@ img {
     color: #a0aec0;
 }
 
+.plan:nth-child(2) {
+    background: linear-gradient(135deg,rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    transform: scale(1.05);
+}
+
+.plan:nth-child(2) .plan__name,
+.plan:nth-child(2) .plan__price,
+.plan:nth-child(2) .plan__duration,
+.plan:nth-child(2) .plan__target,
+.plan:nth-child(2) .plan__feature {
+    color: #f7fafc;
+}
+
 .plan__middle {
     display: flex;
     flex-direction: column;
@@ -580,6 +603,11 @@ img {
 .plan:nth-child(odd) .plan__middle {
     border-top: 2px solid rgb(229, 231, 235);
     border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+.plan:nth-child(2) .plan__middle {
+    border-top: 2px solid rgb(102,126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
 }
 
 .plan__target {
@@ -612,4 +640,9 @@ img {
     border: none;
     font-size: 18px;
     letter-spacing: .7px;
+}
+
+.plan__featured .plan__button {
+    background-color: #fff;
+    color: #6415ff;
 }
