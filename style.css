@@ -488,3 +488,128 @@ img {
 #values .btn {
     margin-top: 36px;
 }
+
+.pricing__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing .section__para {
+    max-width: 576px;
+    text-align: center;
+}
+
+.plans {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.plan {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 64px 32px 0 0;
+    padding: 8px 32px 0 32px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(26, 32, 44);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.plan__stipe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 8px;
+    border-top-left-radius:8px;
+    border-top-right-radius: 8px;
+}
+
+
+
+.plan__top {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    line-height: 1.6;
+}
+
+.plan__name {
+    font-size: 24px;
+}
+.plan__price {
+    font-size: 48px;
+    margin: 4px 0;
+}
+
+.plan__duration {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+.plan:nth-child(odd) .plan__name,
+.plan:nth-child(odd) .plan__price,
+.plan:nth-child(odd) .plan__target {
+    color: #1a202c;
+}
+
+.plan__name, .plan__price, 
+.plan__duration {
+    font-weight: bold;
+    line-height: 1.625;
+}
+
+.plan:nth-child(odd) .plan__duration {
+    color: #a0aec0;
+}
+
+.plan__middle {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    margin-left: -32px;
+    margin-right: -32px;
+}
+
+.plan:nth-child(odd) .plan__middle {
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+.plan__target {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+
+.plan__feature {
+    margin-top: 24px;
+    font-weight: 500;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.plan__bottom {
+    padding: 32px 64px;
+}
+
+.plan__button {
+    border-radius: 500px;
+    background-color:rgb(100, 21, 255);
+    padding: 12px 32px;
+    font-weight: 700;
+    color:rgb(247, 250, 252);
+    transition: all 300ms ease;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    letter-spacing: .7px;
+}
