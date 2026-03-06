@@ -414,3 +414,77 @@ img {
     line-height: 2;
 }
 
+.values__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.values__description, .values__img {
+    width: 50%;
+}
+
+.values__description {
+    padding: 32px 64px 32px 0;
+}
+
+#values .section__title {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.values__list {
+    display: flex;
+    margin-top: 32px;
+    max-width: none;
+}
+
+.value {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.value__title {
+    display: flex;
+    align-items: center;
+}
+
+.value__img--wrapper {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value__img {
+    height: 20px;
+    width: 20px;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+    background-color: #9ae6b4;
+}
+
+.value:nth-child(2) .value__img--wrapper {
+    background-color: #feb2b2;
+}
+
+.value__name {
+    margin-left: 12px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #243e63;
+}
+
+.value__para {
+    margin-top: 16px;
+    line-height: 1.5;
+    color: #718096
+}
+
+#values .btn {
+    margin-top: 36px;
+}
