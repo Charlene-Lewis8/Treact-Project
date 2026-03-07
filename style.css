@@ -766,3 +766,12 @@ img {
     background-color: rgb(229, 231, 235);
     transform: scale(1.1);
 }
+
+.divider {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-right-width: 2px;
+    width: 0.5px;
+    background-color: #edf2f7;
+    height: 32px;
+}
